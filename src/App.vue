@@ -37,14 +37,17 @@ export default {
       search_query.value = "";
     };
 
+    console.log(animelist);
+
     return {
+      Card,
       search_query,
       animelist,
       HandleSearch,
     };
   },
   components: {
-    Card
+    Card,
   }
 };
 </script>
