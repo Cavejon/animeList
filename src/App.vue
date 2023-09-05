@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { handleError, ref } from "vue";
 import Card from "./components/Card.vue";
 
 export default {
@@ -37,10 +37,10 @@ export default {
       search_query.value = "";
     };
 
-    console.log(animelist);
+    console.log(JSON.stringify(HandleSearch))
+
 
     return {
-      Card,
       search_query,
       animelist,
       HandleSearch,
